@@ -59,10 +59,11 @@ function createStyle() {
 
 function preview() {
     if (createStyle()) {
+        document.querySelectorAll('style').forEach(i => i.outerHTML = "");
         let s = document.createElement('style');
         s.innerHTML = cssGen;
         document.head.appendChild(s);
-        document.getElementById("preview").innerHTML = "Success! 😀 Hope you like it.";
+        document.getElementById("preview").innerHTML = "Success! 😀 Hope you like it. Click to preview again";
         document.getElementsByClassName("create")[0].style.display = "block";
         document.getElementsByClassName("create")[1].style.display = "block";
     }
