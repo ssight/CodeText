@@ -75,8 +75,9 @@ var createExtension = {
             fetch("./ext/manifest.json").then(i => i.text().then(manifest => {
                 var zip = new JSZip();
                 zip.file("manifest.json", manifest);
+                zip.file("style.css", cssGen);
                 zip.generateAsync({ type: 'blob' }).then((content) => {
-                    saveAs(content, "ext.zip");
+                    saveAs(content, "CodeText.xpi");
                 })
             }))
         }
