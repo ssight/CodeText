@@ -99,10 +99,11 @@ code {
     margin-top: 50px;
 }
 
-#create {
+.create {
     margin-top: 75px;
-    font-size: 28px;
+    font-size: 21px;
     display: none;
+    margin: 20px;
 }
 
 footer {

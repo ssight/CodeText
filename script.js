@@ -63,6 +63,7 @@ function preview() {
         s.innerHTML = cssGen;
         document.head.appendChild(s);
         document.getElementById("preview").innerHTML = "Success! 😀 Hope you like it.";
-        document.getElementById("create").style.display = "block";
+        document.getElementsByClassName("create")[0].style.display = "block";
+        document.getElementsByClassName("create")[1].style.display = "block";
     }
 }
