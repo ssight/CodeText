@@ -73,7 +73,11 @@ var createExtension = {
     firefox: function () {
         if (createStyle()) {
             fetch("./ext/manifest.json").then(i => i.text().then(manifest => {
-                alert(manifest)
+                var zip = new JSZip();
+                zip.file("manifest.json", manifest);
+                zip.generateAsync({ type: 'blob' }).then((content) => {
+                    saveAs(content, "ext.zip");
+                })
             }))
         }
     }
