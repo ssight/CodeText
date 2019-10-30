@@ -6,3 +6,9 @@ CodeText is a website that you visit that will generate a custom Chrome or Firef
 
 ## Where can I get it?
 You can get it soon, but for now, CodeText is still under development. In the meantime, feel free to contribute or open an issue :)
+
+
+### Try it out now!
+If you have the extension installed, the following code should look different:
+
+    Hello, World! This is a test.
