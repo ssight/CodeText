@@ -69,17 +69,16 @@ function preview() {
     }
 }
 
-var createExtension = {
-    firefox: function () {
-        if (createStyle()) {
-            fetch("./ext/manifest.json").then(i => i.text().then(manifest => {
-                var zip = new JSZip();
-                zip.file("manifest.json", manifest);
-                zip.file("style.css", cssGen);
-                zip.generateAsync({ type: 'blob' }).then((content) => {
-                    saveAs(content, "CodeText.xpi");
-                })
-            }))
-        }
+function createExtension(Firefox) {
+    if (createStyle()) {
+        fetch("./ext/manifest.json").then(i => i.text().then(manifest => {
+            var zip = new JSZip();
+            zip.file("manifest.json", manifest);
+            zip.file("style.css", cssGen);
+            zip.generateAsync({ type: 'blob' }).then((content) => {
+                if (Firefox) saveAs(content, "CodeText.xpi");
+                else saveAs(content, "CodeText.zip");
+            })
+        }))
     }
 }
