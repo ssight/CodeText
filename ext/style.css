@@ -1,8 +1,0 @@
-/* This is just a test */
-
-code, pre, .blob-code, .blob-code>* {
-    font-family: 'Courier New', Courier, monospace;
-    background: black !important;
-    color: white !important;
-    border-radius: 5px !important;
-}
