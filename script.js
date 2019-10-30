@@ -68,3 +68,13 @@ function preview() {
         document.getElementsByClassName("create")[1].style.display = "block";
     }
 }
+
+var createExtension = {
+    firefox: function () {
+        if (createStyle()) {
+            fetch("./ext/manifest.json").then(i => i.text().then(manifest => {
+                alert(manifest)
+            }))
+        }
+    }
+}
