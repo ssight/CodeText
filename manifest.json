@@ -16,5 +16,14 @@
     "options_page": "options/index.html",
     "permissions": [
         "storage"
-    ]
+    ],
+
+    "icons":{
+        "16x16": "icons/16.png",
+        "32x32": "icons/32.png",
+        "48x48": "icons/48.png",
+        "128x128": "icons/128.png",
+        "256x256": "icons/256.png",
+        "512x512": "icons/512.png"
+    }
 }
