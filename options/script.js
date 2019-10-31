@@ -124,7 +124,9 @@ function createExtension() {
         'color': document.getElementById("foregroundColor").value,
         'backgroundColor': document.getElementById("backgroundColor").value
     }, () => {
-        document.getElementById("create").innerHTML = "Hooray 🙌! Your settings have been saved.";
+        document.getElementById("create").innerHTML = `Hooray 🙌! Your settings have been saved.<br>
+            You can close this window if you want.<br>
+            Click here to save your settings again.`;
     });
 }
 
