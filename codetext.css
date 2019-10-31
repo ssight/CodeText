@@ -1,0 +1,52 @@
+code, pre, .blob-code, .blob-code>* {
+    font-family: consolas!important;
+    background: #141414!important;
+    color: #ffffff!important;
+    border-radius: 5px!important;
+    font-size: px!important;
+}
+
+pre {
+    padding: 20px!important
+}
+
+code {
+    padding: 5px 20px
+}
+
+pre>code {
+    padding: 0
+}
+
+
+
+code, pre, .blob-code, .blob-code>* {
+    font-family: 'consolas'!important;
+    background: rgb(0,0,0)!important;
+    color: rgb(255, 255, 255);
+    border-radius: px!important;
+    font-size: px!important;
+}
+
+pre {
+    padding: px!important;
+    filter: invert(1);
+    background: rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0)!important;
+}
+
+code {
+    padding: px;
+}
+
+pre>code {
+    padding: 0!important;
+    background: rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0)!important;
+}
+
+pre>* {
+    padding: 0!important;
+    background: rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0)!important;
+}

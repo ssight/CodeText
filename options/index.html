@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="fontdetect.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>CodeText</title>
+</head>
+
+<body>
+    <h1>Let's create your extension.</h1>
+    <div class="divider">
+        <div></div>
+    </div>
+
+    <h2>First, choose the background color you would like your code to be.</h2>
+    <div class="step">
+        <input type="color" id="backgroundColor">
+        <p id="color-text">Currently #000000</p>
+    </div>
+
+    <h2>Likewise, choose the foreground color of the text.</h2>
+    <div class="step">
+        <input type="color" id="foregroundColor">
+        <p id="color-text-foreground">Currently #000000</p>
+    </div>
+
+    <h2>Now, choose your font.</h2>
+    <div class="step">
+        <h3>Enter the name of a font below.</h3>
+        <div class="step">
+            <input type="text" id="fontLocation"
+                placeholder="Enter the name of the font you want. Make sure you have it installed">
+            <button style="margin-left:20px" id="fontCheck">Check if
+                it's installed</button>
+        </div>
+    </div><br>
+
+    <h2>Let's add a border radius.</h2>
+    <div class="step">
+        <input type="numerator" id="borderRadius" placeholder="Enter a number" min="0" max="100">
+    </div><br>
+
+    <h2>Any padding?</h2>
+    <div class="step">
+        <input type="numerator" id="padding" placeholder="Enter a number" min="0" max="100">
+    </div><br>
+
+    <h2>What about padding for the inline text?</h2>
+    <div class="step">
+        <input type="numerator" pattern="[0-9 px]*" id="padding2" placeholder="Enter a number" min="0" max="100">
+    </div><br>
+
+    <h2>Choose a size for the font that we'll force</h2>
+    <div class="step">
+        <input type="numerator" pattern="[0-9 px]*" id="fontSize" placeholder="Enter a number" min="0" max="100">
+    </div><br>
+
+    <h2>Should we apply some extra filters to make syntax highlighted text a bit clearer?</h2>
+    <div class="step">
+        <input type="checkbox" id="invert">
+    </div>
+
+    <br><br>
+    <div class="divider">
+        <div></div>
+    </div>
+    <br>
+    <div class="step"><button id="preview">Preview and check for errors</button></div>
+
+    <pre class="code">
+        <code>Here's how our code would look with these styles.</code>
+        <code>Make sure to click the 'Preview' button to update this.</code></pre>
+
+    Hello, World! <code>This is code without a pre for inline code.</code> And this is text around it.
+
+    <pre class="code">
+        <code style="color:rgb(85, 9, 79)">Wow</code><code> <code style="color:#569cd6ff">syntax</code> <code style="color:navy">highlighted</code> <code style="color:#800000ff">code</code> <code style="color: #ff0000ff">is</code> <code style="color:#448c27ff">great</code>, <code style="color:#cd8d8dff">isn't</code> <code style="color:rgb(44, 44, 44)">it</code>?</code></pre>
+
+    <br><br><br>
+    <div class="divider">
+        <button id="create">Save your settings</button>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <footer>
+        <p>Created by <a href="https://github.com/ssight">@ssight</a>. <a style="margin-left:50px"
+                href="https://github.com/ssight/CodeText">View CodeText on GitHub</a></p>
+    </footer>
+</body>
+
+</html>

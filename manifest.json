@@ -1,13 +1,20 @@
 {
-    "mainfest_version": 2,
+    "manifest_version": 2,
     "name": "CodeText",
     "version": "1.0.0",
-    "description": "A simple Chrome and Firefox extension that changes the stylings of code blocks on pages you visit",
-
+    "description": "A Chrome extension that changes the stylings of code blocks on pages you visit",
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
-            "css": ["codetext.css"]
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "codetext.js"
+            ]
         }
+    ],
+    "options_page": "options/index.html",
+    "permissions": [
+        "storage"
     ]
 }
