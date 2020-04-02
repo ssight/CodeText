@@ -17,7 +17,7 @@ Currently, CodeText isn't on the Chrome Web Store, but you can install it on Chr
 3. Click on the new `Load unpacked` button and choose the folder where you've extracted CodeText to
 
 ### Method 2 (might work)
-⚠ This may not work and is not recommended. Do this only if you can't do the first method for some reason.
+⚠ This may not work and is not recommended. Do this only if you can't use the first method for some reason.
 
 1. Go to the [releases](https://github.com/ssight/CodeText/releases/) section and download the `.crx` file.
 
