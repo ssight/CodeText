@@ -61,32 +61,32 @@ function createStyle() {
                 "font-family": `'${document.getElementById('fontLocation').value}'!important`,
                 "background": `${invertColor(document.getElementById("backgroundColor").value)}!important`,
                 "color": `${invertColor(document.getElementById("foregroundColor").value)}`,
-                "border-radius": `${document.getElementById("borderRadius").value}px!important`,
-                "font-size": `${document.getElementById("fontSize").value}px!important`
+                "border-radius": `${document.getElementById("borderRadius").value}!important`,
+                "font-size": `${document.getElementById("fontSize").value}!important`
             }
         } else {
             styles[0] = {
                 "font-family": `'${document.getElementById('fontLocation').value}'!important`,
                 "background": `${document.getElementById("backgroundColor").value}!important`,
                 "color": `${document.getElementById("foregroundColor").value}`,
-                "border-radius": `${document.getElementById("borderRadius").value}px!important`,
-                "font-size": `${document.getElementById("fontSize").value}px!important`
+                "border-radius": `${document.getElementById("borderRadius").value}!important`,
+                "font-size": `${document.getElementById("fontSize").value}!important`
             }
         }
 
         if (document.getElementById("invert").checked) {
             styles[1] = {
-                "padding": `${document.getElementById("padding").value}px!important`,
+                "padding": `${document.getElementById("padding").value}!important`,
                 "filter": "invert(1)"
             }
         } else {
             styles[1] = {
-                "padding": `${document.getElementById("padding").value}px!important`
+                "padding": `${document.getElementById("padding").value}!important`
             }
         }
 
         styles[2] = {
-            "padding": `${document.getElementById("padding2").value}px`
+            "padding": `${document.getElementById("padding2").value}`
         }
 
         cssGen = "";
@@ -97,7 +97,6 @@ function createStyle() {
             })
             cssGen += "}"
         }
-        cssGen = cssGen.replace(/pxpx/g, "px");
 
         return true;
     } else {

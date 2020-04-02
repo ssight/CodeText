@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "CodeText",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A Chrome extension that changes the stylings of code blocks on pages you visit",
     "content_scripts": [
         {
