@@ -44,4 +44,8 @@ It's likely that you haven't configured CodeText to how you want it. Follow the 
 Any form of contributions are welcome. If you notice a bug, feel free to open an issue, or if you have some better code, go ahead and send a pull request.
 
 ## I still have an issue :/
+<<<<<<< HEAD
 Feel free to [open an issue](https://github.com/ssight/CodeText/issues/new), I'll be happy to help :)
+=======
+Feel free to [open an issue](https://github.com/ssight/CodeText/issues/new), I'll be happy to help :)
+>>>>>>> 87a67d81ab8ecf0fe5d2cf014ded5bd7c07d183a
