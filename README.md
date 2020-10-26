@@ -7,7 +7,7 @@ CodeText is an extension that changes the way code blocks look on pages that you
 ## Where can I get it?
 
 ### Chrome Web Store
-* Get the extension on the Chrome Web Store [here](https://chrome.google.com/webstore/detail/bgapacmlaofadjgmhfhoclmhbgljfnig)
+* Get the extension on the Chrome Web Store [here](https://chrome.google.com/webstore/detail/bgapacmlaofadjgmhfhoclmhbgljfnig). **(Note that I am not in control of the store page, so it may be out of date or modified.)**
 
 ### Get the latest version from GitHub
 
